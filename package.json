@@ -1,0 +1,21 @@
+{
+  "name": "JavaScript_26-July-2017",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvalyneWangariMwangi/JavaScript_26-July-2017.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/EvalyneWangariMwangi/JavaScript_26-July-2017/issues"
+  },
+  "dependencies": {
+    "foundation-sites": "~6.4.1"
+  }
+}
