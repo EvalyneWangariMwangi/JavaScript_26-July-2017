@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encapsulation</title>
+	<script src="js/encapsulation.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+  function Person(n, y) {
+    var name=n;
+    var year=y;
+    // Set a variable to the same as this
+    var thisObj=this;
+    this.setName= function(n){ name=n;}
+    this.getName= function(){ return name;}
+    this.setYear= function(y){ year=y;}
+    this.getYear= function(){ return year;}
+
+    //all methods that a constructor function holds are private and cannot be accessed publicly
+    var born = function() {
+      var nYear=new Date().getFullYear();
+      // Use the thisObj variable which is the same as this refer to.
+      return nYear-thisObj.getYear();
+      // The "this" keyword inside this function refers to an object
+      // created by the constructor function of this function object.
+    }
+    this.getBornYear= function() {
+      return born();
+    }
+  }
+  var person = new Person("Nikita",60);
+  document.write(person.getName()+" was born in "+person.getBornYear()+"<br>");
+</script>
+<!-- encapsulation is bundling up of data and methods that use that data -->
+
+</body>
+</html>

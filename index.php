@@ -26,10 +26,10 @@
 		<script>
 			//objects
 				var person = {
-			    firstName : "John",
-			    lastName  : "Doe",
-			    age       : 50,
-			    eyeColor  : "blue"
+				    firstName : "John",
+				    lastName  : "Doe",
+				    age       : 50,
+				    eyeColor  : "blue"
 				};
 
 				document.getElementById("demo").innerHTML =
